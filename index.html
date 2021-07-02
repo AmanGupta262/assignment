@@ -1,14 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    Dashboard
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container d-flex">
+      <aside class="sidebar">
+        <img src="./icons/logo.png" alt="" class="logo" />
+        <div class="menu-container">
+          <div class="menu-item">
+            <img src="./icons/avatar.png" class="icon" alt="" />
+            <div class="text">Students</div>
+          </div>
+          <div class="menu-item">
+            <img src="./icons/book.png" class="icon" alt="" />
+            <div class="text">Lesson Plan</div>
+          </div>
+          <div class="menu-item">
+            <img src="./icons/cogwheel.png" class="icon" alt="" />
+            <div class="text">Settings</div>
+          </div>
+        </div>
+      </aside>
+      <main class="content">
+        <div class="breadcrumb">
+            <img src="./icons/left-arrow.png" alt="" class="icon breadcrumb-icon">
+            Videos
+        </div>
+        <form class="upload-form">
+          <input type="url" class="input" />
+          <div class="break">or</div>
+          <div class="file">
+            <input type="file" class="file-input" />
+            <span class="upload-file">upload</span>
+          </div>
+        </form>
+      </main>
+    </div>
+
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
