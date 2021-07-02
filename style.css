@@ -1,10 +1,63 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    background-color: #f1f2f4;
-    font-family: sans-serif;
-    min-height: 100vh;
+body {
+  background-color: #f1f2f4;
+  font-family: sans-serif;
+  min-height: 100vh;
+}
+.d-flex {
+  display: flex;
+}
+.container {
+  width: 100%;
+}
+aside.sidebar {
+  width: 110px;
+  background-color: #ffff;
+  height: 100vh;
+  box-shadow: 3px 0px 20px 5px #ccc;
+  margin-right: 2rem;
+  z-index: 200;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 0.5rem;
+}
+.logo-container {
+  padding: 1rem;
+  justify-content: center;
+  cursor: pointer;
+}
+.menu-item {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.menu-item:hover,
+.menu-item:hover {
+  background-color: #d0e0ed;
+  box-shadow: inset 4px 0px 0px 0px #336ec7;
+}
+.menu-item .text {
+  font-size: 0.75rem;
+  color: #939da6;
+  width: 100%;
+  text-align: center;
+}
+.menu-item:hover .text,
+.menu-item:focus .text {
+  color: #151d31;
+  font-weight: bold;
+}
+.menu-item:hover .icon,
+.menu-item:focus .icon {
+  filter: brightness(0.1);
 }
